@@ -380,7 +380,7 @@
       };
 
       const msg1 = 'On Thanksgiving Day, Monday, October 8, 2018 we will work from 3 pm to 11 pm (Family day).'
-      if (msg && msg.length > 0) {
+      if (typeof(msg)!=='undefined' && msg.length > 0) {
         toastr.info(` ${msg}. <button type="button" class="btn clear">Got it.</button>`, "Attention", options);
 
         $('.clear').on('click', () => {
