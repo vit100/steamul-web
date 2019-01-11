@@ -377,11 +377,18 @@
         "tapToDismiss": false
       };
 
-      const msg1 = `Our Holiday hours: 
+      const msg = `Movie Day today.
 <br><br>
 
-December 31: 12 pm - 9 pm (Family day)<br><hr>
-January 1: 4 pm - 11 pm (Family day)<br>`
+Dear friends,<br>
+
+There will be filming interior scenes of the television series "<a href="https://www.netflix.com/ca/title/80113647">Designated Survivor</a>" 
+airing on Netflix starring Kiefer Sutherland on Steamul Sauna premises on Friday,<br>
+ January 11, 2018 from 12 pm till 4 pm. 
+ <br><br>
+ Because of that we will open 2 hours later, at 5 pm instead of 3 pm.
+
+Sorry for inconvenience. <br>`
 
       if (typeof(msg)!=='undefined' && msg.length > 0) {
         toastr.info(` ${msg} <button type="button" class="btn clear">Got it.</button>`, "Attention", options);
