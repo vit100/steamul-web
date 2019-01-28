@@ -1,0 +1,16 @@
+{
+  "name": "steamul-web",
+  "version": "1.0.0",
+  "description": "http://Steamulsauna.ca web site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "git push origin && git push github"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://vit100.visualstudio.com/Steamul-Web/_git/Steamul-Web"
+  },
+  "author": "",
+  "license": "ISC"
+}
