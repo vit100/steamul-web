@@ -377,7 +377,10 @@
         "tapToDismiss": false
       };
 
-      const msg1 = `<br>`
+      const msg = `Dear Customers. <br>
+      We are closed today (28 Jan 2019) due to tech issues related to weather condition.<br/>
+      Sorry for inconvinience.<br>
+      `
 
       if (typeof(msg)!=='undefined' && msg.length > 0) {
         toastr.info(` ${msg} <button type="button" class="btn clear">Got it.</button>`, "Attention", options);
