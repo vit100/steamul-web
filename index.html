@@ -88,9 +88,6 @@
         </div>
         <div class="top-menu-nav">
           <ul>
-            <!-- <li>
-                    <a href="#home">Home</a>
-                </li> -->
             <li>
               <a href="#about">About Us</a>
             </li>
@@ -121,52 +118,25 @@
       </div>
       <div class="sauna-widgets">
         <div class="visitors-widget">
-          <div class="visitors-number">
-            7
+          <span class="capacity_indicator" id="gauge"></span>
+        </div>
+        <div class="temperature-widget">
+          <div class="temperature-item">
+            <a href="//thermo.steamulsauna.ca"><canvas id="canvasRadial1" title="Big Banya,°C"></canvas></a>
           </div>
-          <div class="visitors-sign">
-            Visitors now
+          <div class="temperature-item">
+            <a href="//thermo.steamulsauna.ca"><canvas id="canvasRadial2" title="Small Banya,°C"></canvas></a>
+          </div>
+          <div class="temperature-item-3">
+            <a href="//thermo.steamulsauna.ca"><canvas id="canvasRadial3" title="Finnish Sauna,°C"></canvas></a>
+          </div>
+          <div class="temperature-item">
+            <a href="//thermo.steamulsauna.ca"><canvas id="canvasRadial4" title="Steam Room,°C"></canvas></a>
+          </div>
+          <div class="temperature-item">
+            <a href="//thermo.steamulsauna.ca"><canvas id="canvasRadial5" title="New Room,°C"></canvas></a>
           </div>
         </div>
-        <a href="//thermo.steamulsauna.ca">
-          <div class="temperature-widget">
-            <div class="temperature-item">
-              <img src="images/term1.png" alt="Term 1" class="temperature-image" />
-              <div class="temperature-sign">
-                Big banya<br />
-                94.1 C°
-              </div>
-            </div>
-            <div class="temperature-item">
-              <img src="images/term2.png" alt="Term 2" class="temperature-image" />
-              <div class="temperature-sign">
-                Small banya<br />
-                104.3 C°
-              </div>
-            </div>
-            <div class="temperature-item-3">
-              <img src="images/term3.png" alt="Term 3" class="temperature-image" />
-              <div class="temperature-sign">
-                Steam room<br />
-                29.2 C°
-              </div>
-            </div>
-            <div class="temperature-item">
-              <img src="images/term4.png" alt="Term 4" class="temperature-image" />
-              <div class="temperature-sign">
-                Small sauna<br />
-                29.2 C°
-              </div>
-            </div>
-            <div class="temperature-item">
-              <img src="images/term4.png" alt="Term 4" class="temperature-image" />
-              <div class="temperature-sign">
-                Small sauna<br />
-                29.2 C°
-              </div>
-            </div>
-          </div></a
-        >
       </div>
     </header>
     <main class="main-wrapper">
@@ -185,39 +155,23 @@
               traditional Eastern European bath house services with a perfect customer service experience.
             </div>
             <div class="owl-carousel" id="mob">
-              <a data-fancybox="gallery" href="images/slider1.JPG"><img src="images/slider1.JPG" alt="1 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider2.jpg"><img src="images/slider2.jpg" alt="2 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider3.jpg"><img src="images/slider3.jpg" alt="3 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider4.jpg"><img src="images/slider4.jpg" alt="4 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider5.jpg"><img src="images/slider5.jpg" alt="5 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider6.jpg"><img src="images/slider6.jpg" alt="6 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider7.jpg"><img src="images/slider7.jpg" alt="7 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider8.jpg"><img src="images/slider8.jpg" alt="8 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider9.jpg"><img src="images/slider9.jpg" alt="9 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider10.jpg"
-                ><img src="images/slider10.jpg" alt="10 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider11.jpg"
-                ><img src="images/slider11.jpg" alt="11 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider12.jpg"
-                ><img src="images/slider12.jpg" alt="12 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider13.jpg"
-                ><img src="images/slider13.jpg" alt="13 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider14.jpg"
-                ><img src="images/slider14.jpg" alt="14 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider15.jpg"
-                ><img src="images/slider15.jpg" alt="15 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider16.jpg"
-                ><img src="images/slider16.jpg" alt="16 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider17.jpg"
-                ><img src="images/slider17.jpg" alt="17 картинка"
-              /></a>
+              <a data-fancybox="gallery" href="images/slider1.JPG"><img src="images/slider1.JPG" alt="1_image"/></a>
+              <a data-fancybox="gallery" href="images/slider2.jpg"><img src="images/slider2.jpg" alt="2_image"/></a>
+              <a data-fancybox="gallery" href="images/slider3.jpg"><img src="images/slider3.jpg" alt="3_image"/></a>
+              <a data-fancybox="gallery" href="images/slider4.jpg"><img src="images/slider4.jpg" alt="4_image"/></a>
+              <a data-fancybox="gallery" href="images/slider5.jpg"><img src="images/slider5.jpg" alt="5_image"/></a>
+              <a data-fancybox="gallery" href="images/slider6.jpg"><img src="images/slider6.jpg" alt="6_image"/></a>
+              <a data-fancybox="gallery" href="images/slider7.jpg"><img src="images/slider7.jpg" alt="7_image"/></a>
+              <a data-fancybox="gallery" href="images/slider8.jpg"><img src="images/slider8.jpg" alt="8_image"/></a>
+              <a data-fancybox="gallery" href="images/slider9.jpg"><img src="images/slider9.jpg" alt="9_image"/></a>
+              <a data-fancybox="gallery" href="images/slider10.jpg"><img src="images/slider10.jpg" alt="10_image"/></a>
+              <a data-fancybox="gallery" href="images/slider11.jpg"><img src="images/slider11.jpg" alt="11_image"/></a>
+              <a data-fancybox="gallery" href="images/slider12.jpg"><img src="images/slider12.jpg" alt="12_image"/></a>
+              <a data-fancybox="gallery" href="images/slider13.jpg"><img src="images/slider13.jpg" alt="13_image"/></a>
+              <a data-fancybox="gallery" href="images/slider14.jpg"><img src="images/slider14.jpg" alt="14_image"/></a>
+              <a data-fancybox="gallery" href="images/slider15.jpg"><img src="images/slider15.jpg" alt="15_image"/></a>
+              <a data-fancybox="gallery" href="images/slider16.jpg"><img src="images/slider16.jpg" alt="16_image"/></a>
+              <a data-fancybox="gallery" href="images/slider17.jpg"><img src="images/slider17.jpg" alt="17_image"/></a>
             </div>
             <div class="video">
               <iframe
@@ -230,45 +184,24 @@
               ></iframe>
             </div>
             <div class="owl-carousel" id="pc">
-              <a data-fancybox="gallery" href="images/slider1.JPG"><img src="images/slider1.JPG" alt="1 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider2.jpg"><img src="images/slider2.jpg" alt="2 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider3.jpg"><img src="images/slider3.jpg" alt="3 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider4.jpg"><img src="images/slider4.jpg" alt="4 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider5.jpg"><img src="images/slider5.jpg" alt="5 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider6.jpg"><img src="images/slider6.jpg" alt="6 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider7.jpg"><img src="images/slider7.jpg" alt="7 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider8.jpg"><img src="images/slider8.jpg" alt="8 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider9.jpg"><img src="images/slider9.jpg" alt="9 картинка"/></a>
-              <a data-fancybox="gallery" href="images/slider10.jpg"
-                ><img src="images/slider10.jpg" alt="10 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider11.jpg"
-                ><img src="images/slider11.jpg" alt="11 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider12.jpg"
-                ><img src="images/slider12.jpg" alt="12 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider13.jpg"
-                ><img src="images/slider13.jpg" alt="13 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider14.jpg"
-                ><img src="images/slider14.jpg" alt="14 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider15.jpg"
-                ><img src="images/slider15.jpg" alt="15 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider16.jpg"
-                ><img src="images/slider16.jpg" alt="16 картинка"
-              /></a>
-              <a data-fancybox="gallery" href="images/slider17.jpg"
-                ><img src="images/slider17.jpg" alt="17 картинка"
-              /></a>
+              <a data-fancybox="gallery" href="images/slider1.JPG"><img src="images/slider1.JPG" alt="1_image"/></a>
+              <a data-fancybox="gallery" href="images/slider2.jpg"><img src="images/slider2.jpg" alt="2_image"/></a>
+              <a data-fancybox="gallery" href="images/slider3.jpg"><img src="images/slider3.jpg" alt="3_image"/></a>
+              <a data-fancybox="gallery" href="images/slider4.jpg"><img src="images/slider4.jpg" alt="4_image"/></a>
+              <a data-fancybox="gallery" href="images/slider5.jpg"><img src="images/slider5.jpg" alt="5_image"/></a>
+              <a data-fancybox="gallery" href="images/slider6.jpg"><img src="images/slider6.jpg" alt="6_image"/></a>
+              <a data-fancybox="gallery" href="images/slider7.jpg"><img src="images/slider7.jpg" alt="7_image"/></a>
+              <a data-fancybox="gallery" href="images/slider8.jpg"><img src="images/slider8.jpg" alt="8_image"/></a>
+              <a data-fancybox="gallery" href="images/slider9.jpg"><img src="images/slider9.jpg" alt="9_image"/></a>
+              <a data-fancybox="gallery" href="images/slider10.jpg"><img src="images/slider10.jpg" alt="10_image"/></a>
+              <a data-fancybox="gallery" href="images/slider11.jpg"><img src="images/slider11.jpg" alt="11_image"/></a>
+              <a data-fancybox="gallery" href="images/slider12.jpg"><img src="images/slider12.jpg" alt="12_image"/></a>
+              <a data-fancybox="gallery" href="images/slider13.jpg"><img src="images/slider13.jpg" alt="13_image"/></a>
+              <a data-fancybox="gallery" href="images/slider14.jpg"><img src="images/slider14.jpg" alt="14_image"/></a>
+              <a data-fancybox="gallery" href="images/slider15.jpg"><img src="images/slider15.jpg" alt="15_image"/></a>
+              <a data-fancybox="gallery" href="images/slider16.jpg"><img src="images/slider16.jpg" alt="16_image"/></a>
+              <a data-fancybox="gallery" href="images/slider17.jpg"><img src="images/slider17.jpg" alt="17_image"/></a>
             </div>
-            <!-- <div class="about-images">
-                    <img src="images/img1.jpg" alt="Первая картинка">
-                    <img src="images/img2.jpg" alt="Вторая картинка">
-                    <img src="images/img3.jpg" alt="Третья картинка">
-                </div> -->
           </div>
         </div>
       </section>
@@ -609,23 +542,23 @@
       </section>
       <!---<section class="slider">
                 <div class="owl-carousel">
-                <img src="images/slider1.JPG" alt="1 картинка">
-                <img src="images/slider2.jpg" alt="2 картинка">
-                <img src="images/slider3.jpg" alt="3 картинка">
-                <img src="images/slider4.jpg" alt="4 картинка">
-                <img src="images/slider5.jpg" alt="5 картинка">
-                <img src="images/slider6.jpg" alt="6 картинка">
-                <img src="images/slider7.jpg" alt="7 картинка">
-                <img src="images/slider8.jpg" alt="8 картинка">
-                <img src="images/slider9.jpg" alt="9 картинка">
-                <img src="images/slider10.jpg" alt="10 картинка">
-                <img src="images/slider11.jpg" alt="11 картинка">
-                <img src="images/slider12.jpg" alt="12 картинка">
-                <img src="images/slider13.jpg" alt="13 картинка">
-                <img src="images/slider14.jpg" alt="14 картинка">
-                <img src="images/slider15.jpg" alt="15 картинка">
-                <img src="images/slider16.jpg" alt="16 картинка">
-                <img src="images/slider17.jpg" alt="17 картинка">
+                <img src="images/slider1.JPG" alt="1_image">
+                <img src="images/slider2.jpg" alt="2_image">
+                <img src="images/slider3.jpg" alt="3_image">
+                <img src="images/slider4.jpg" alt="4_image">
+                <img src="images/slider5.jpg" alt="5_image">
+                <img src="images/slider6.jpg" alt="6_image">
+                <img src="images/slider7.jpg" alt="7_image">
+                <img src="images/slider8.jpg" alt="8_image">
+                <img src="images/slider9.jpg" alt="9_image">
+                <img src="images/slider10.jpg" alt="10_image">
+                <img src="images/slider11.jpg" alt="11_image">
+                <img src="images/slider12.jpg" alt="12_image">
+                <img src="images/slider13.jpg" alt="13_image">
+                <img src="images/slider14.jpg" alt="14_image">
+                <img src="images/slider15.jpg" alt="15_image">
+                <img src="images/slider16.jpg" alt="16_image">
+                <img src="images/slider17.jpg" alt="17_image">
     </div>
     </section>--->
       <section class="contacts-block" id="contacts">
@@ -774,11 +707,21 @@
       ↑
     </a>
 
-    <script src="js/jquery-1.12.4.js"></script>
+    <!-- <script src="js/jquery-1.12.4.js"></script> -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/fancybox/jquery.fancybox.min.js"></script>
     <script src="js/scripts.js?v=125125sdg"></script>
     <script src="js/owl.carousel.min.js"></script>
+
+    <script src="//bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+
+    <script src="//res.cloudinary.com/vit100/raw/upload/v1513444614/Steamul_Web/steelseries-min.js"></script>
+    <script src="//res.cloudinary.com/vit100/raw/upload/v1513444609/Steamul_Web/tween-min.js"></script>
+
+    <script src="//res.cloudinary.com/vit100/raw/upload/v1519053571/Steamul_Web/raphael-2.1.4.min.js"></script>
+    <script src="//res.cloudinary.com/vit100/raw/upload/v1519053570/Steamul_Web/justgage.js"></script>
+    <script src="js/thermo_visitors.js"></script>
 
     <!-- <div id="popup_down">
       Dear friends,
@@ -790,5 +733,12 @@
       <button onclick="$('#popup_down').hide();" id="close">Got it.</button>
     </div> -->
     <div class="clearfix"></div>
+
+    <style>
+      #CDSWIDERR {
+        width: 100% !important;
+        padding: 0px 5px 5px !important;
+      }
+    </style>
   </body>
 </html>

@@ -19,11 +19,11 @@ body {
 }
 
 #popup_down{
-	position: fixed; /* Фиксированное положение */
+	position: fixed; /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 	bottom: 0px;
-	padding: 7px; /* Поля вокруг текста */ 
-    background: #fff; /* Цвет фона */ 
-    border: 0px solid #000; /* Параметры рамки */ 
+	padding: 7px; /* пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ */ 
+    background: #fff; /* пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ */ 
+    border: 0px solid #000; /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ */ 
 	z-index: 999;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
 	width: 100%;
@@ -395,24 +395,18 @@ max-width: 100%;
     text-align: center;
 }
 
-.temperature-image {
-    margin-bottom: 3px;
-    max-width: 95px;
-}
 .visitors-widget {
     text-align: center;
-    background-image: url('../images/visitors.png');
+    /* background-image: url('../images/visitors.png'); */
     background-size: contain;
     background-repeat: no-repeat;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
     padding: 22px 36px;
 }
 
-.visitors-number {
+/* .visitors-number {
     font-size: 29px;
     margin-top: 16px;
-}
+} */
 .services-nav li:hover {color: #08aded;}
 .services--title {
     position: absolute;
@@ -738,8 +732,6 @@ max-width: 100%;
     width: 176px;
 }
 
-.services-right {}
-
 .slide-content table {
     max-width: 100%;
     overflow-x: auto;
@@ -781,9 +773,6 @@ width:100%;
     font-size: 24px;
 }
 
-.visitors-widget {
-    margin-top: 15px;
-}
 .top-menu {
     justify-content: center;
 }
@@ -814,15 +803,6 @@ width:100%;
 
 .site-header {
     background-size: cover;
-}
-.contacts-table table tbody {
-    /* display: block; */
-    /* margin: 0 auto; */
-}
-
-.contacts-table table {
-    /* display: block; */
-    /* width: 100%; */
 }
 
 .contacts-table {
