@@ -1,4 +1,4 @@
-const visitorCountUrl = 'http://pos.steamulsauna.ca/Reports/GetVisitorCount';
+const visitorCountUrl = '//pos.steamulsauna.ca/Reports/GetVisitorCount';
 termSensorsUrl = '//steamul-thermo.azurewebsites.net/api/Thermo/?id=1&id=2&id=3&id=4&id=5'
 
 $(function() {
