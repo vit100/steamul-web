@@ -276,16 +276,9 @@ body {
   margin: 10px auto;
 }
 .contacts--info {
-  /*position: absolute;*/
   position: relative;
-  /*right: 30px;*/
   left: 50%;
-  /*top: 140px;*/
   width: calc(50% - 30px);
-}
-
-.contacts--content {
-  height: 463px;
 }
 
 .contacts-block {
@@ -303,20 +296,36 @@ body {
   padding-top: 35px;
 }
 
+.contacts--content {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items:stretch;
+align-content:stretch
+}
+
 .contacts--map {
   height: 463px;
-  width: 50%;
-  /*transform: skew(20deg);*/
-  overflow: hidden;
-  position: absolute;
-  left: -90px;
-  padding-left: 88px;
+  flex-grow: 2;
+  padding: 10px;
 }
 .contacts--map iframe {
   height: 463px;
   /*transform: skew(-20deg);*/
-  width: 120%;
+  width: 100%;
 }
+
+.bttl{
+  flex-grow: 2;
+  padding: 10px;
+}
+
+.bttr{
+  padding: 10px;
+  flex-grow: 1;
+  flex-basis:20%
+}
+
 
 .contacts--blocker {
   display: flex;
@@ -607,17 +616,6 @@ body {
   cursor: pointer;
 }
 
-.modal-dialog form {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.modal {
-  display: none;
-}
-
-.modal.active {
-  display: block;
-}
 .slide-btn {
   text-transform: uppercase;
   color: #fff;
@@ -841,9 +839,6 @@ body {
     width: 176px;
   }
 
-  .services-right {
-  }
-
   .slide-content table {
     max-width: 100%;
     overflow-x: auto;
@@ -984,16 +979,7 @@ a.ui-button:active,
   overflow: visible !important;
 }
 
-.bttl {
-  width: 50%;
-  padding-right: 20px;
-  float: left;
-  box-sizing: border-box;
-}
-.bttr {
-  float: left;
-  width: 50%;
-}
+
 @media screen and (max-width: 980px) {
   .contacts--info {
     width: 100%;
@@ -1013,12 +999,5 @@ a.ui-button:active,
   }
   #CDSWIDSSP .widSSPData {
     margin-top: 0;
-  }
-  .bttl {
-    width: 100%;
-    padding-right: 0px;
-  }
-  .bttr {
-    width: 100%;
   }
 }
