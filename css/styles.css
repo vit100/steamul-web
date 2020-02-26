@@ -3,7 +3,7 @@ body {
 }
 
 .site-header {
-  background: url('../images/headerbg.jpg');
+  background: url('//res.cloudinary.com/vit100/image/upload/c_scale,q_auto,w_auto,dpr_auto/v1582746042/steamul.ca/headerbg.jpg');
   color: #fff;
   background-size: cover;
 }
@@ -60,14 +60,14 @@ body {
 }
 
 .owl-carousel .owl-nav button.owl-prev {
-  background: url(../images/left.svg) center center no-repeat;
+  background: url(//res.cloudinary.com/vit100/image/upload/c_scale,q_auto,w_auto,dpr_auto/v1582746042/steamul.ca/left.svg) center center no-repeat;
   width: 30px;
   height: 30px;
   left: -40px;
 }
 
 .owl-carousel .owl-nav button.owl-next {
-  background: url(../images/right.svg) center center no-repeat;
+  background: url(//res.cloudinary.com/vit100/image/upload/c_scale,q_auto,w_auto,dpr_auto/v1582746042/steamul.ca/right.svg) center center no-repeat;
   width: 30px;
   height: 30px;
   right: -40px;
