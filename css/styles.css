@@ -18,15 +18,19 @@ body {
 }
 
 #popup_down {
-  position: fixed; /* Фиксированное положение */
+  position: fixed;
   bottom: 0px;
-  padding: 7px; /* Поля вокруг текста */
-  background: #fff; /* Цвет фона */
-  border: 0px solid #000; /* Параметры рамки */
+  padding: 7px;
+  margin: 2% 0 0 2%;
+  background-color: #feedc9;
+  border: 0px solid #000;
   z-index: 999;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
-  width: 100%;
+  width: 96%;
+  height: 60%;
   box-sizing: border-box;
+  overflow-y: scroll;
+
 }
 
 #close {
