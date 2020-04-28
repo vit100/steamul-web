@@ -18,6 +18,7 @@ body {
 }
 
 #popup_down {
+  display: none;
   position: fixed;
   bottom: 0px;
   padding: 7px;
