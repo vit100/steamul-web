@@ -32,32 +32,32 @@ $(function() {
     new steelseries.Radial(
       'canvasRadial1',
       $.extend(initParam, {
-        titleString: 'Big Banya',
+        titleString: 'Small Banya',
         area: [steelseries.Section(90, 110, 'rgba(220, 0, 0, 0.3)')],
       })
     ),
     new steelseries.Radial(
       'canvasRadial2',
       $.extend(initParam, {
-        titleString: 'Small Banya',
+        titleString: 'Big Banya',
         area: [steelseries.Section(100, 125, 'rgba(220, 0, 0, 0.3)')],
       })
     ),
     new steelseries.Radial(
       'canvasRadial3',
       $.extend(initParam, {
-        titleString: 'Finnish Sauna',
+        titleString: 'Big Sauna',
         area: [steelseries.Section(80, 100, 'rgba(220, 0, 0, 0.3)')],
       })
     ),
     new steelseries.Radial(
       'canvasRadial4',
       $.extend(initParam, {
-        titleString: 'Steam Room',
+        titleString: 'Small Sauna',
         area: [steelseries.Section(50, 70, 'rgba(220, 0, 0, 0.3)')],
       })
     ),
-    new steelseries.Radial('canvasRadial5', $.extend(initParam, { titleString: 'New Sauna',
+    new steelseries.Radial('canvasRadial5', $.extend(initParam, { titleString: 'Steam Room',
     area: [steelseries.Section(80, 90, 'rgba(220, 0, 0, 0.3)')], }))
     //new steelseries.Radial('canvasRadial6', $.extend(initParam, { titleString: "Temperature 6" }))
   ];
