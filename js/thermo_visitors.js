@@ -1,5 +1,5 @@
 const visitorCountUrl = 'https://pos.steamulsauna.ca/Reports/GetVisitorCount';
-termSensorsUrl = 'https://thermo.steamulsauna.ca/api/Thermo/?id=1&id=2&id=3&id=4&id=5'
+termSensorsUrl = 'https://thermo-sensor.azurewebsites.net/api/Thermo/6164FB7E?id=1&id=2&id=3&id=4&id=5'
 
 $(function() {
   var g = new JustGage({
