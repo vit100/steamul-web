@@ -15,6 +15,7 @@ $(function() {
   $.get(visitorCountUrl)
     .done(function(d) {
       g.refresh(d.data);
+      $('#gauge').show(2000);
     })
     .fail(function() {
       $('#gauge').hide();
