@@ -13,10 +13,6 @@ function hasClass(element, className) {
 
 var navs = document.querySelectorAll('.services-nav li');
 var tabs = document.querySelectorAll('.services-slide');
-var modal = document.querySelector('.modal');
-var modalOpeners = document.querySelectorAll('.modal-open');
-var modalClosers = document.querySelectorAll('.modal-close');
-var modalOverlay = document.querySelector('.modal-overlay');
 
 for(i=0; i<navs.length; i++) {
 	navs[i].onclick = function() {
@@ -37,23 +33,6 @@ for(i=0; i<navs.length; i++) {
 	}
 }
 
-var i = 0;
-for(i=0; i<modalOpeners.length; i++) {
-	modalOpeners[i].onclick = function() {
-		modal.classList.add('active');
-		return false;
-	}
-}
-for(i=0; i<modalClosers.length; i++) {
-	modalClosers[i].onclick = function() {
-		modal.classList.remove('active');
-		return false;
-	}
-}
-modalOverlay.onclick = function() {
-	modal.classList.remove('active');
-	return false;
-}
 
 var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
     V = 0.2;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
