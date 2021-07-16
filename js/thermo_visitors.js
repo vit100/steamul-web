@@ -73,11 +73,11 @@ $(function() {
     $.get({
         url: termSensorsUrl,
         success: function(d) {
-            radials[0].setValueAnimated(d[4].v);
-            radials[1].setValueAnimated(d[1].v);
-            radials[2].setValueAnimated(d[2].v);
-            radials[3].setValueAnimated(d[3].v);
-            radials[4].setValueAnimated(d[0].v);
+            radials[0].setValueAnimated(d.find((e)=>e.id==1).v);
+            radials[1].setValueAnimated(d.find((e)=>e.id==2).v);
+            radials[2].setValueAnimated(d.find((e)=>e.id==3).v);
+            radials[3].setValueAnimated(d.find((e)=>e.id==4).v);
+            radials[4].setValueAnimated(d.find((e)=>e.id==5).v);
         }
     });
 });
