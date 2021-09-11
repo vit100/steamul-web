@@ -31,11 +31,10 @@ body {
   max-height: 60%;
   box-sizing: border-box;
   overflow-y: scroll;
-
 }
 
-#warning_icon{
-  display: inline-block; 
+#warning_icon {
+  display: inline-block;
   width: 32px;
 }
 
@@ -70,14 +69,16 @@ body {
 }
 
 .owl-carousel .owl-nav button.owl-prev {
-  background: url(//res.cloudinary.com/vit100/image/upload/c_scale,q_auto,w_auto,dpr_auto/v1582746042/steamul.ca/left.svg) center center no-repeat;
+  background: url(//res.cloudinary.com/vit100/image/upload/c_scale,q_auto,w_auto,dpr_auto/v1582746042/steamul.ca/left.svg)
+    center center no-repeat;
   width: 30px;
   height: 30px;
   left: -40px;
 }
 
 .owl-carousel .owl-nav button.owl-next {
-  background: url(//res.cloudinary.com/vit100/image/upload/c_scale,q_auto,w_auto,dpr_auto/v1582746042/steamul.ca/right.svg) center center no-repeat;
+  background: url(//res.cloudinary.com/vit100/image/upload/c_scale,q_auto,w_auto,dpr_auto/v1582746042/steamul.ca/right.svg)
+    center center no-repeat;
   width: 30px;
   height: 30px;
   right: -40px;
@@ -161,12 +162,20 @@ body {
 .footer-menu-logo img {
   max-width: 300px;
 }
+
+.badges{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 33px 49px 30px;
 }
 
 .hero--text {
@@ -180,21 +189,6 @@ body {
   text-transform: uppercase;
 }
 
-.hero--btn {
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none;
-  font-size: 32px;
-  border: 4px solid #08aded;
-  padding: 11px 64px;
-  margin-top: 66px;
-  transition: 0.2s;
-  text-align: center;
-}
-
-.hero--btn:hover {
-  background: #08aded;
-}
 .container {
   max-width: 1225px;
   margin: 0 auto;
@@ -307,11 +301,11 @@ body {
 }
 
 .contacts--content {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-align-items:stretch;
-align-content:stretch
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .contacts--map {
@@ -325,17 +319,16 @@ align-content:stretch
   width: 100%;
 }
 
-.bttl{
+.bttl {
   flex-grow: 2;
   padding: 10px;
 }
 
-.bttr{
+.bttr {
   padding: 10px;
   flex-grow: 1;
-  flex-basis:20%
+  flex-basis: 20%;
 }
-
 
 .contacts--blocker {
   display: flex;
@@ -486,7 +479,7 @@ align-content:stretch
 .capacity_indicator {
   width: 250px;
   height: 100px;
-  margin-left: 50px
+  margin-left: 50px;
 }
 
 .visitors-number {
@@ -988,7 +981,6 @@ a.ui-button:active,
 #CDSWIDSSP {
   overflow: visible !important;
 }
-
 
 @media screen and (max-width: 980px) {
   .contacts--info {
