@@ -34,7 +34,7 @@ $(function() {
             'canvasRadial0',
             $.extend(initParam, {
                 titleString: 'Small Banya',
-                area: [steelseries.Section(90, 120, 'rgba(220, 0, 0, 0.3)')],
+                area: [steelseries.Section(100, 140, 'rgba(220, 0, 0, 0.3)')],
             })
         ),
         new steelseries.Radial(
