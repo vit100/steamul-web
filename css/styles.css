@@ -19,10 +19,10 @@ body {
 
 #popup_down {
   position: sticky;
-  width: 50%;
+  width: 80%;
   margin: auto;
   padding: 7px;
-  bottom: 10%;
+  bottom: 5%;
   background-color: #feedc9;
   border: 0px solid #000;
   z-index: 999;
