@@ -222,7 +222,6 @@ body {
 }
 
 .video {
-  display: inline-block;
   width: 40%;
   float: right;
   text-align: right;
@@ -637,6 +636,11 @@ body {
   text-align: justify;
   font-size: 18px;
 }
+
+.slide-content p a{
+color: currentColor;
+}
+
 .top-menu-phone a {
   text-decoration: none;
   color: #fff;
@@ -910,10 +914,6 @@ body {
 
   .site-header {
     background-size: cover;
-  }
-  .contacts-table table tbody {
-    /* display: block; */
-    /* margin: 0 auto; */
   }
 
   .contacts-table table {
