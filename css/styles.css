@@ -370,7 +370,7 @@ body {
   border-right: 0;
 }
 .services-nav {
-  margin: 0;
+  margin: 30px;
   padding: 0;
   transform: skew(-8deg);
 }
