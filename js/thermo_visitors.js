@@ -10,6 +10,8 @@ $(function () {
 		label: 'Visitors now',
 		labelFontColor: '#000000',
 		hideMinMax: true,
+		levelColors: ['#FFFF00', '#FF0000'], // Yellow and Red
+		thresholds: [140] // Define the threshold at 100
 	});
 
 	$.get(visitorCountUrl)
