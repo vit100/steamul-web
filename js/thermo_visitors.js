@@ -6,7 +6,7 @@ $(function () {
 		id: 'gauge',
 		value: 0,
 		min: 0,
-		max: 100,
+		max: 150,
 		label: 'Visitors now',
 		labelFontColor: '#000000',
 		hideMinMax: true,
