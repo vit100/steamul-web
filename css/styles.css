@@ -18,27 +18,46 @@ body {
 }
 
 #popup_down {
-  position: sticky;
+  position: fixed;
   width: 80%;
+  max-width: 600px;
   margin: auto;
-  padding: 7px;
-  bottom: 5%;
+  padding: 15px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #feedc9;
+  border-radius: 8px;
   border: 0px solid #000;
   z-index: 999;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: auto;
+  max-height: 80vh;
   display: none;
+  line-height: 1.5;
 }
 
 #warning_icon {
   display: inline-block;
   width: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 #close {
   float: right;
+  background: #836055;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#close:hover {
+  background-color: #6d4c43;
 }
 .owl-carousel {
   margin: 20px 0px;
@@ -370,7 +389,7 @@ body {
   border-right: 0;
 }
 .services-nav {
-  margin: 30px;
+  margin: 0;
   padding: 0;
   transform: skew(-8deg);
 }
@@ -402,7 +421,7 @@ body {
     rgba(130, 141, 147, 0.44) 99%,
     rgba(0, 163, 225, 0.43) 100%
   );
-  padding: 135px 30px 63px 200px;
+  padding: 215px 30px 63px 200px;
   box-sizing: border-box;
   transform: skew(8deg);
   margin-left: -58px;
@@ -410,9 +429,10 @@ body {
 }
 
 .services-right {
-  width: 60%;
-  padding: 135px 100px 96px 221px;
+  width: 63%;
+  padding: 215px 100px 96px 221px;
   box-sizing: border-box;
+  min-height: 1028px;
 }
 
 .slide--title {
@@ -666,6 +686,7 @@ color: currentColor;
   padding: 15px;
   text-align: center;
   visibility: hidden;
+  z-index: 1000;
 }
 
 @media only screen and (max-width: 1130px) {
@@ -798,13 +819,11 @@ color: currentColor;
   .about-images img {
     width: 33%;
     vertical-align: top;
-  }
-
-  .services-left {
+  }  .services-left {
     width: 100%;
     box-sizing: border-box;
     transform: none;
-    padding: 96px 20px 15px 20px;
+    padding: 196px 20px 15px 20px;
     margin-left: 0;
     color: #add8e6;
   }
@@ -876,9 +895,7 @@ color: currentColor;
     padding-left: 0;
     margin-top: 15px;
     display: block;
-  }
-
-  .services-nav {
+  }  .services-nav {
     transform: none;
   }
   .hero--btn {
