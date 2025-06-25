@@ -14,37 +14,36 @@ $(function () {
 		hideMinMax: true,
 		// Color zones for capacity visualization
 		staticZones: [
-			{strokeStyle: "#30B32D", min: 0, max: 130},    // Green: Normal capacity
-			{strokeStyle: "#FFDD00", min: 130, max: 140},  // Yellow: High capacity
-			{strokeStyle: "#F03E3E", min: 140, max: 150}   // Red: Near maximum
+			{ strokeStyle: '#30B32D', min: 0, max: 130 }, // Green: Normal capacity
+			{ strokeStyle: '#FFDD00', min: 130, max: 140 }, // Yellow: High capacity
+			{ strokeStyle: '#F03E3E', min: 140, max: 150 }, // Red: Near maximum
 		],
 		// Improved animation settings
 		startAnimationTime: 700,
 		refreshAnimationTime: 700,
-		counter: true
+		counter: true,
 	});
 	// Fetch visitor count with improved error handling and caching
-	fetch(visitorCountUrl, {
-		method: 'GET',
-		headers: {
-			'Accept': 'application/json',
-			'Cache-Control': 'no-cache'
+	(async function () {
+		try {
+			const response = await fetch(visitorCountUrl, {
+				method: 'GET',
+				headers: {
+					Accept: 'application/json',
+					'Cache-Control': 'no-cache',
+				},
+			});
+			if (!response.ok) {
+				throw new Error('Network response was not ok');
+			}
+			const data = await response.json();
+			visitorGauge.refresh(data.data);
+			$('#gauge').fadeIn(800);
+		} catch (error) {
+			console.error('Error fetching visitor count:', error);
+			$('#gauge').hide();
 		}
-	})
-	.then(response => {
-		if (!response.ok) {
-			throw new Error('Network response was not ok');
-		}
-		return response.json();
-	})
-	.then(data => {
-		visitorGauge.refresh(data.data);
-		$('#gauge').fadeIn(800);
-	})
-	.catch(error => {
-		console.error('Error fetching visitor count:', error);
-		$('#gauge').hide();
-	});
+	})();
 
 	var initParam = {
 		gaugeType: steelseries.GaugeType.TYPE4,
