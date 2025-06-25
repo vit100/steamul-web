@@ -1,8 +1,10 @@
 const visitorCountUrl = 'https://steamul-pos.azurewebsites.net/Reports/GetVisitorCount';
 const termSensorsUrl = 'https://thermo-sensor.azurewebsites.net/api/Thermo/6164FB7E?id=1&id=2&id=3&id=4&id=5';
 
+// Initialize gauge and temperature indicators when document is ready
 $(function () {
-	var g = new JustGage({
+	// Create visitor gauge with improved configuration
+	const visitorGauge = new JustGage({
 		id: 'gauge',
 		value: 0,
 		min: 0,
@@ -10,21 +12,39 @@ $(function () {
 		label: 'Visitors now',
 		labelFontColor: '#000000',
 		hideMinMax: true,
+		// Color zones for capacity visualization
 		staticZones: [
-   {strokeStyle: "#F03E3E", min: 140, max: 150}, // Red from 100 to 130
-   {strokeStyle: "#FFDD00", min: 130, max: 140}, // Yellow
-   {strokeStyle: "#30B32D", min: 0, max: 130}, // Green
-],
+			{strokeStyle: "#30B32D", min: 0, max: 130},    // Green: Normal capacity
+			{strokeStyle: "#FFDD00", min: 130, max: 140},  // Yellow: High capacity
+			{strokeStyle: "#F03E3E", min: 140, max: 150}   // Red: Near maximum
+		],
+		// Improved animation settings
+		startAnimationTime: 700,
+		refreshAnimationTime: 700,
+		counter: true
 	});
-
-	$.get(visitorCountUrl)
-		.done(function (d) {
-			g.refresh(d.data);
-			$('#gauge').show(2000);
-		})
-		.fail(function () {
-			$('#gauge').hide();
-		});
+	// Fetch visitor count with improved error handling and caching
+	fetch(visitorCountUrl, {
+		method: 'GET',
+		headers: {
+			'Accept': 'application/json',
+			'Cache-Control': 'no-cache'
+		}
+	})
+	.then(response => {
+		if (!response.ok) {
+			throw new Error('Network response was not ok');
+		}
+		return response.json();
+	})
+	.then(data => {
+		visitorGauge.refresh(data.data);
+		$('#gauge').fadeIn(800);
+	})
+	.catch(error => {
+		console.error('Error fetching visitor count:', error);
+		$('#gauge').hide();
+	});
 
 	var initParam = {
 		gaugeType: steelseries.GaugeType.TYPE4,
