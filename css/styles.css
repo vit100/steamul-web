@@ -3,7 +3,7 @@ body {
 }
 
 .site-header {
-  background: url('//res.cloudinary.com/vit100/image/upload/c_scale,q_auto,w_auto,dpr_auto/v1582746042/steamul.ca/headerbg.jpg');
+  background: url('https://res.cloudinary.com/vit100/image/upload/c_scale,q_auto,w_auto,dpr_auto/v1582746042/steamul.ca/headerbg.jpg');
   color: #fff;
   background-size: cover;
 }
@@ -87,7 +87,7 @@ body {
 }
 
 .owl-carousel .owl-nav button.owl-prev {
-  background: url(//res.cloudinary.com/vit100/image/upload/c_scale,q_auto,w_auto,dpr_auto/v1582746042/steamul.ca/left.svg)
+  background: url(https://res.cloudinary.com/vit100/image/upload/c_scale,q_auto,w_auto,dpr_auto/v1582746042/steamul.ca/left.svg)
     center center no-repeat;
   width: 30px;
   height: 30px;
@@ -95,7 +95,7 @@ body {
 }
 
 .owl-carousel .owl-nav button.owl-next {
-  background: url(//res.cloudinary.com/vit100/image/upload/c_scale,q_auto,w_auto,dpr_auto/v1582746042/steamul.ca/right.svg)
+  background: url(https://res.cloudinary.com/vit100/image/upload/c_scale,q_auto,w_auto,dpr_auto/v1582746042/steamul.ca/right.svg)
     center center no-repeat;
   width: 30px;
   height: 30px;
@@ -1018,4 +1018,10 @@ a.ui-button:active,
   #CDSWIDSSP .widSSPData {
     margin-top: 0;
   }
+}
+
+/* Widget styling */
+#CDSWIDERR {
+  width: 100% !important;
+  padding: 0px 5px 5px !important;
 }
