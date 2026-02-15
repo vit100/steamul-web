@@ -36,17 +36,53 @@
 			property="og:image"
 			content="https://res.cloudinary.com/vit100/image/upload/c_scale,w_auto/q_auto/dpr_auto/v1582746042/steamul.ca/logo.png"
 		/>
+		
+		<!-- Structured Data (JSON-LD) for SEO -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Steamul Sauna",
+			"image": "https://res.cloudinary.com/vit100/image/upload/c_scale,w_auto/q_auto/dpr_auto/v1582746042/steamul.ca/logo.png",
+			"@id": "https://steamulsauna.ca",
+			"url": "https://steamulsauna.ca",
+			"telephone": "+16474273940",
+			"priceRange": "$$",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "1310 Dundas St E #14",
+				"addressLocality": "Mississauga",
+				"addressRegion": "ON",
+				"postalCode": "L4Y 2C1",
+				"addressCountry": "CA"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": 43.6065091,
+				"longitude": -79.5849435
+			},
+			"description": "Authentic Eastern European Sauna experience in Mississauga offering relaxation, health benefits and traditional services.",
+			"sameAs": [
+				"https://www.tripadvisor.ca/"
+			]
+		}
+		</script>
+		
 		<!-- Preload critical resources -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet" />
 		<!-- CSS files -->
+		<!-- CSS files -->
 		<link rel="stylesheet" href="css/normalize.min.css" />
-		<link rel="stylesheet" href="css/jquery-ui.css" />
-		<link rel="stylesheet" href="css/owl.carousel.min.css" />
-		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="css/variables.css" />
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/components/accordion.css" />
 		<link rel="stylesheet" href="css/visual-coherence.css" />
+		<!-- Swiper CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<!-- Fancybox CSS (keeping for now, can be replaced later) -->
+		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css" />
 
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript">
@@ -783,9 +819,9 @@
 								<h3>What is included in my visit price?</h3>
 								<div class="accordeon-container">
 									<p>
-										Entrance fee includes a bathrobe, 3 towels, a locker, tea, purified drinking
+										Entrance fee includes a bathrobe, 2 towels, a locker, tea, purified drinking
 										water and NO TIME LIMIT during business hours Monday through Thursday. 4 hours
-										maximum limit on Friday through Sunday. $10 an hour for each full or partial
+										maximum limit on Friday through Sunday. $16 an hour for each full or partial
 										hour above limit.
 									</p>
 								</div>
@@ -1039,19 +1075,22 @@
 			</section>
 		</main>
 
-		<a href="#home" class="on-top"> ↑ </a>
+		<a href="#home" class="on-top" aria-label="Scroll to top"> ↑ </a>
 
+		<!-- Swiper.js from CDN (for carousel) -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		
+		<!-- jQuery (minimal - only for Fancybox lightbox, will be replaced later) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script src="js/jquery-ui.js"></script>
 		<script src="js/fancybox/jquery.fancybox.min.js"></script>
-		<script src="js/scripts.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-
+		
+		<!-- Modern JavaScript (ES Modules) -->
+		<script type="module" src="js/main.js"></script>
+		
+		<!-- Legacy scripts (temperature widgets and announcements - keeping for now) -->
 		<script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
-
 		<script src="https://res.cloudinary.com/vit100/raw/upload/v1513444614/Steamul_Web/steelseries-min.js"></script>
 		<script src="https://res.cloudinary.com/vit100/raw/upload/v1513444609/Steamul_Web/tween-min.js"></script>
-
 		<script src="https://res.cloudinary.com/vit100/raw/upload/v1519053571/Steamul_Web/raphael-2.1.4.min.js"></script>
 		<script src="https://res.cloudinary.com/vit100/raw/upload/v1519053570/Steamul_Web/justgage.js"></script>
 		<script src="js/thermo_visitors.js"></script>
