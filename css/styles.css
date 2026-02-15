@@ -429,7 +429,7 @@ body {
 }
 
 .services-right {
-  width: 63%;
+  flex: 1;
   padding: 215px 100px 96px 221px;
   box-sizing: border-box;
   min-height: 1028px;
