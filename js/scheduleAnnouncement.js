@@ -7,7 +7,7 @@
 		$.get('https://steamul-scheduler.azurewebsites.net/api/scheduleAnnouncement')
 			.done(function (d) {
 				if (d && d.announcement && d.announcement.text) {
-					$('#messageBody').text(d.announcement.text);
+					$('#messageBody').html(d.announcement.text); //my text is safe
 					$('#popup_down').show(1500);
 				}
 
