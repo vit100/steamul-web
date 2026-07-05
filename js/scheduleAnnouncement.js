@@ -1,7 +1,27 @@
 (function () {
+	var walkInsAnnouncement = 'Walk-ins are always welcome. Standard entry is first come, first served. Bookings are required for private rooms only. Please note: A valid physical ID is required for all first-time visitors.';
+
 	$(function () {
+<<<<<<< Updated upstream
 		$('#close, #close-confirm').on('click', function() {
 			$('#popup_down').hide();
+=======
+		$.get('https://steamul-scheduler.azurewebsites.net/api/scheduleAnnouncement', function (d) {
+			if (d.announcement && d.announcement.text) {
+				$('#messageBody').html(announcementText(d.announcement.text));
+				$('#popup_down').show(1500);
+			}
+
+			if (d.schedule) {
+				daySchedule('monday', d.schedule.monday);
+				daySchedule('tuesday', d.schedule.tuesday);
+				daySchedule('wednesday', d.schedule.wednesday);
+				daySchedule('thursday', d.schedule.thursday);
+				daySchedule('friday', d.schedule.friday);
+				daySchedule('saturday', d.schedule.saturday);
+				daySchedule('sunday', d.schedule.sunday);
+			}
+>>>>>>> Stashed changes
 		});
 
 		$.get('https://steamul-scheduler.azurewebsites.net/api/scheduleAnnouncement')
@@ -40,5 +60,9 @@
 		$row.find('.schedule-start').text(data.start || '—');
 		$row.find('.schedule-end').text(data.end || '—');
 		$row.find('.schedule-comment').text(data.comment || '');
+	}
+
+	function announcementText(text) {
+		return /walk[\s-]?ins?/i.test(text) ? walkInsAnnouncement : text;
 	}
 })();
