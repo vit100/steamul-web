@@ -1,0 +1,12 @@
+# Source-control and local tooling files are not needed in the web-server image.
+.git
+.gitignore
+.vscode
+.idea
+node_modules
+*.log
+README.md
+RENDER_HEADERS.md
+DEPLOYMENT.md
+Dockerfile
+.dockerignore
