@@ -39,5 +39,5 @@ jobs:
         platforms: linux/amd64,linux/arm64
         push: true
         tags: |
-          vit100/steamul-web:${{ steps.generate-tag.outputs.tag }}
-          vit100/steamul-web:latest
+          ${{ secrets.DOCKERHUB_USERNAME }}/steamul-web:${{ steps.generate-tag.outputs.tag }}
+          ${{ secrets.DOCKERHUB_USERNAME }}/steamul-web:latest
