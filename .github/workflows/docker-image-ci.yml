@@ -10,21 +10,36 @@ jobs:
   build-push:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
     
     - name: Generate tag
       id: generate-tag
       run: echo "tag=$(date +%s)" >> $GITHUB_OUTPUT
     
+    # 1. Set up QEMU (allows building for ARM64 on x86 runners)
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v3
+      
+    # 2. Set up Docker Buildx (creates the multi-platform builder)
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    # 3. Log in to Docker Hub
     - name: Login to Docker Hub
-      run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
   
-    - name: Build the Docker image
-      run: |
-        docker build . --file Dockerfile --tag vit100/steamul-web:${{ steps.generate-tag.outputs.tag }}
-        docker tag vit100/steamul-web:${{ steps.generate-tag.outputs.tag }} vit100/steamul-web:latest
-        
-    - name: Push to github
-      run: |
-        docker push vit100/steamul-web:${{ steps.generate-tag.outputs.tag }}
-        docker push vit100/steamul-web:latest
+    # 4. Build and Push the multi-platform image
+    - name: Build and push Multi-Platform Image
+      uses: docker/build-push-action@v6
+      with:
+        context: .
+        file: ./Dockerfile
+        platforms: linux/amd64,linux/arm64
+        push: true
+        tags: |
+          vit100/steamul-web:${{ steps.generate-tag.outputs.tag }}
+          vit100/steamul-web:latest
